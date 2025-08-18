@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/Style/Projects.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Projects</a>
+        <nav>
+            <a href="Main.html" class="active">Home</a>
+            <a href="Exsperince.html">Experience</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Certs.html">Certifications</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title">My <span>Projects</span></h1>
+        <p class="subtitle">Interactive portfolio showcasing cybersecurity and development work</p>
+
+        <div class="projects-grid">
+            <!-- Malware Analysis -->
+            <div class="project-bubble" data-category="malware">
+                <div class="project-icon">
+                    <i class="fas fa-virus"></i>
+                </div>
+                <h3 class="project-title">Malware Analysis</h3>
+                <p class="project-description">Deep dive into malicious software analysis and reverse engineering</p>
+                
+                <div class="dropdown-content">
+                    <div class="project-item">
+                        <h4>Static Analysis Framework</h4>
+                        <p>Developed a comprehensive static analysis tool for PE files, including entropy analysis, string extraction, and signature detection.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">YARA</span>
+                            <span class="tech-tag">PE Tools</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h4>Dynamic Sandbox Environment</h4>
+                        <p>Built an isolated sandbox environment for safe malware execution and behavior analysis using virtualization technologies.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">VirtualBox</span>
+                            <span class="tech-tag">Cuckoo</span>
+                            <span class="tech-tag">Linux</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h4>Ransomware Family Classification</h4>
+                        <p>Machine learning model to classify ransomware families based on behavioral patterns and code signatures.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email Analysis -->
+            <div class="project-bubble" data-category="email">
+                <div class="project-icon">
+                    <i class="fas fa-envelope-open-text"></i>
+                </div>
+                <h3 class="project-title">Email Analysis</h3>
+                <p class="project-description">Advanced email security analysis and phishing detection systems</p>
+                
+                <div class="dropdown-content">
+                    <div class="project-item">
+                        <h4>Phishing Detection Engine</h4>
+                        <p>AI-powered system to detect phishing emails using NLP and machine learning techniques for content analysis.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLTK</span>
+                            <span class="tech-tag">SpaCy</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h4>Email Header Analyzer</h4>
+                        <p>Tool for analyzing email headers to trace origins, detect spoofing, and identify suspicious routing patterns.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Regex</span>
+                            <span class="tech-tag">DNS Tools</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h4>Attachment Scanner</h4>
+                        <p>Automated scanner for email attachments that detects malicious files and suspicious content patterns.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">VirusTotal API</span>
+                            <span class="tech-tag">File Analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Atomic Red Team -->
+            <div class="project-bubble" data-category="atomic">
+                <div class="project-icon">
+                    <i class="fas fa-atom"></i>
+                </div>
+                <h3 class="project-title">Atomic Red Team</h3>
+                <p class="project-description">Red team exercises and attack simulation frameworks</p>
+                
+                <div class="dropdown-content">
+                    <div class="project-item">
+                        <h4>Custom Attack Techniques</h4>
+                        <p>Developed custom MITRE ATT&CK techniques for testing specific organizational vulnerabilities and detection capabilities.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">PowerShell</span>
+                            <span class="tech-tag">MITRE ATT&CK</span>
+                            <span class="tech-tag">YAML</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h4>Automated Testing Framework</h4>
+                        <p>Built an automated framework for running Atomic Red Team tests and generating comprehensive security assessment reports.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PowerShell</span>
+                            <span class="tech-tag">JSON</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h4>Detection Rule Validation</h4>
+                        <p>System for validating SIEM detection rules against Atomic Red Team techniques to ensure proper coverage.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Splunk</span>
+                            <span class="tech-tag">Sigma Rules</span>
+                            <span class="tech-tag">ELK Stack</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Programming Projects -->
+            <!-- <div class="project-bubble" data-category="programming">
+                <div class="project-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="project-title">Programming Projects</h3>
+                <p class="project-description">Full-stack development and automation solutions</p>
+                
+                <div class="dropdown-content">
+                    <div class="project-item">
+                        <h4>Security Dashboard</h4>
+                        <p>Real-time cybersecurity dashboard displaying threat intelligence, vulnerability scans, and security metrics.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h4>Vulnerability Scanner</h4>
+                        <p>Network vulnerability scanner with automated reporting and integration with popular security frameworks.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Nmap</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h4>Incident Response Automation</h4>
+                        <p>Automated incident response system that integrates with SIEM tools and orchestrates response workflows.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <script>
+        // Project bubble interaction
+        document.addEventListener("DOMContentLoaded", function() {
+            const projectBubbles = document.querySelectorAll(".project-bubble");
+            
+            projectBubbles.forEach(bubble => {
+                const dropdown = bubble.querySelector(".dropdown-content");
+                let isActive = false;
+                
+                bubble.addEventListener("click", function(e) {
+                    e.stopPropagation();
+                    
+                    // Close all other dropdowns
+                    projectBubbles.forEach(otherBubble => {
+                        if (otherBubble !== bubble) {
+                            otherBubble.classList.remove("active");
+                            otherBubble.querySelector(".dropdown-content").classList.remove("active");
+                        }
+                    });
+                    
+                    // Toggle current dropdown
+                    isActive = !isActive;
+                    bubble.classList.toggle("active", isActive);
+                    dropdown.classList.toggle("active", isActive);
+                });
+                
+                // Prevent dropdown clicks from closing the dropdown
+                dropdown.addEventListener("click", function(e) {
+                    e.stopPropagation();
+                });
+            });
+            
+            // Close dropdowns when clicking outside
+            document.addEventListener("click", function() {
+                projectBubbles.forEach(bubble => {
+                    bubble.classList.remove("active");
+                    bubble.querySelector(".dropdown-content").classList.remove("active");
+                });
+            });
+            
+            // Add smooth scrolling for better UX
+            const projectItems = document.querySelectorAll(".project-item");
+            projectItems.forEach(item => {
+                item.addEventListener("click", function() {
+                    // Add click effect
+                    this.style.transform = "translateX(10px) scale(0.98)";
+                    setTimeout(() => {
+                        this.style.transform = "translateX(5px)";
+                    }, 150);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
